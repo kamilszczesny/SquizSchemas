@@ -1,0 +1,47 @@
+{
+    "name": "TestowySlider",
+    "displayDuration": 15,
+    "items": {
+
+        "items": [
+            [{
+                    "itemId": "123",
+                    "itemType": "BannerItem",
+                    "scheduling": "30.01.2018-02.02.2018"
+                },
+                {
+                    "itemId": "22",
+                    "itemType": "BannerItem",
+                    "scheduling": "30.02.2018-02.03.2018"
+                },
+                {
+                    "itemId": "99",
+                    "itemType": "BannerItem",
+                    "scheduling": "01.03.2018-02.03.2018"
+                }
+            ],
+
+            [{
+                    "itemId": "123",
+                    "itemType": "BannerItem",
+                    "scheduling": "30.01.2018-02.02.2018"
+                },
+                {
+                    "itemId": "22",
+                    "itemType": "BannerItem",
+                    "scheduling": "30.02.2018-02.03.2018"
+                },
+                {
+                    "itemId": "99",
+                    "itemType": "BannerItem",
+                    "scheduling": "01.03.2018-02.03.2018"
+                },
+                {
+                    "itemId": "11",
+                    "itemType": "BannerItem",
+                    "scheduling": "01.04.2018-22.04.2018"
+                }
+            ]
+        ]
+    }
+}
