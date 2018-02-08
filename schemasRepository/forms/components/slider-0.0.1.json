@@ -5,92 +5,112 @@
     },
     "version": "0.0.1",
     "sections": [{
-        "id": "2583",
-        "name": "Slider",
-        "hidden": false,
-        "fields": [{
-                "$ref": "../controls/name-0.0.1.json"
-            },
-            {
-                "name": "displayDuration",
-                "title": "Select duration",
-                "default": 4,
-                "type": "text",
-                "hidden": false,
-                "validation": {
-                    "min": 2,
-                    "max": 30,
-                    "required": true,
-                    "integer": true
-                }
-            },
-            {
-                "name": "items",
-                "title": "Label Rotations",
-                "default": [],
-                "type": "listing",
-                "hidden": false,
-                "draggable": true,
-                "validation": {
-                    "required": true
+            "name": "Slider",
+            "hidden": false,
+            "fields": [{
+                    "name": "name",
+                    "title": "Name",
+                    "default": "",
+                    "type": "text",
+                    "hidden": false,
+                    "validation": {
+                        "required": true
+                    }
                 },
-                "schema": [{
-                    "id": "items",
+                {
+                    "name": "displayDuration",
+                    "title": "Select duration",
+                    "default": 4,
+                    "type": "text",
+                    "hidden": false,
+                    "validation": {
+                        "min": 2,
+                        "max": 30,
+                        "required": true,
+                        "integer": true
+                    }
+                },
+                {
                     "name": "items",
-                    "fields": [{
-                        "name": "Items",
-                        "title": "Label Banners",
-                        "default": [],
-                        "type": "listing",
-                        "draggable": true,
-                        "validation": {
-                            "required": true
-                        },
-                        "schema": [{
-                            "name": "item",
-                            "title": "Item",
-                            "fields": [{
-                                    "name": "itemId",
-                                    "title": "ItemId",
-                                    "default": "",
-                                    "type": "text",
-                                    "hidden": false,
-                                    "validateUrl": false,
-                                    "validation": {
-                                        "required": true
-                                    }
-                                },
-                                {
-                                    "name": "schedule",
-                                    "default": "",
-                                    "type": "scheduler",
-                                    "hidden": false,
-                                    "validation": {
-                                        "required": true
-                                    }
-                                },
-                                {
-                                    "name": "itemType",
-                                    "title": "type",
-                                    "default": "",
-                                    "type": "select",
-                                    "multiple": false,
-                                    "hidden": false,
-                                    "options": {
-                                        "Banner": "banner",
-                                        "Html5Banner": "html5banner",
-                                        "Boczek": "odd"
+                    "title": "Label Rotations",
+                    "default": [],
+                    "type": "listing",
+                    "hidden": false,
+                    "draggable": true,
+                    "validation": {
+                        "required": true
+                    },
+                    "schema": [{
+                        "id": "items",
+                        "name": "items",
+                        "fields": [{
+                            "name": "Items",
+                            "title": "Label Banners",
+                            "default": [],
+                            "type": "listing",
+                            "draggable": true,
+                            "validation": {
+                                "required": true
+                            },
+                            "schema": [{
+                                "name": "item",
+                                "title": "Item",
+                                "fields": [{
+                                        "name": "itemId",
+                                        "title": "ItemId",
+                                        "default": "",
+                                        "type": "text",
+                                        "hidden": false,
+                                        "validateUrl": false,
+                                        "validation": {
+                                            "required": true
+                                        }
                                     },
-                                    "validation": {
-                                        "required": true
+                                    {
+                                        "name": "schedule",
+                                        "default": "",
+                                        "type": "scheduler",
+                                        "hidden": false,
+                                        "validation": {
+                                            "required": true
+                                        }
+                                    },
+                                    {
+                                        "name": "itemType",
+                                        "title": "type",
+                                        "default": "",
+                                        "type": "select",
+                                        "multiple": false,
+                                        "hidden": false,
+                                        "options": {
+                                            "Banner": "banner",
+                                            "Html5Banner": "html5banner",
+                                            "Boczek": "odd"
+                                        },
+                                        "validation": {
+                                            "required": true
+                                        }
                                     }
-                                }
-                            ]
-                        }],
-                        "hidden": false
+                                ]
+                            }],
+                            "hidden": false
+                        }]
                     }]
-                }]
-            }
-        ]
-    }]
+                }
+            ]
+        },
+        {
+            "name": "Hidden fields",
+            "id": "675",
+            "sortOrder": "3",
+            "fields": [{
+                "name": "parentId",
+                "title": "",
+                "default": "",
+                "type": "",
+                "hidden": true
+            }],
+            "hidden": true
+        }
+    ]
 }

@@ -5,6 +5,9 @@
         "name": {
             "type": "string"
         },
+        "parentId": {
+            "type": "string"
+        },
         "itemsNumber": {
             "type": "integer",
             "minimum": 1,
