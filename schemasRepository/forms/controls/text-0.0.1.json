@@ -3,8 +3,5 @@
     "title": "Name",
     "default": "",
     "type": "text",
-    "hidden": false,
-    "validation": {
-        "required": true
-    }
+    "hidden": false
 }
