@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "subtitle": {
+            "type": "string"
+        },
+        "sports": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "sportId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name",
+                    "sportId"
+                ]
+            }
+        },
+        "minDisplayNumber": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "maxDisplayNumber": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "refreshTimeout": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "markersTimeout": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "defaultExpanded": {
+            "type": "boolean",
+            "default": true
+        },
+        "clickThrou": {
+            "type": "boolean",
+            "default": true
+        },
+        "showMoreText": {
+            "type": "string"
+        },
+        "viewAllLink": {
+            "$ref": "../atomicDataStructures/link-0.0.1.json"
+        },
+        "feedUrl": {
+            "$ref": "../atomicDataStructures/URL-0.0.1.json"
+        }
+
+    },
+    "required": [
+        "title",
+        "minDisplayNumber",
+        "maxDisplayNumber",
+        "markersTimeout"
+    ],
+    "dependencies": {
+        "clickThrou": ["viewAllLink"]
+
+    }
+}

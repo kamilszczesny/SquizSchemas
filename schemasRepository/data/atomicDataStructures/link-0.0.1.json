@@ -1,0 +1,41 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "schema": {
+            "type": "string"
+
+        },
+        "icon": {
+            "$ref": "./icon-0.0.1.json"
+        },
+        "linkText": {
+            "type": "string"
+        },
+        "target": {
+            "enum": [
+                "overlay",
+                "_self"
+            ],
+            "type": "string",
+            "default": "_self"
+        },
+        "desktopUrl": {
+            "$ref": "./URL-0.0.1.json"
+        },
+        "mobileUrl": {
+            "$ref": "./URL-0.0.1.json"
+        },
+        "androidUrl": {
+            "$ref": "./URL-0.0.1.json"
+        },
+        "iosUrl": {
+            "$ref": "./URL-0.0.1.json"
+        }
+    },
+    "required": [
+        "linkText",
+        "target",
+        "desktopUrl"
+    ],
+    "type": "object"
+}

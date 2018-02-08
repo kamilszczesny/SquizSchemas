@@ -1,0 +1,15 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "image": {
+            "$ref": "./image-0.0.1.json"
+        }
+    },
+    "required": [
+        "name"
+    ],
+    "type": "object"
+}

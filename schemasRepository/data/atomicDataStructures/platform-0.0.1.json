@@ -1,0 +1,9 @@
+{
+    "enum": [
+        "mobileWeb",
+        "web",
+        "iOS",
+        "android"
+    ],
+    "type": "string"
+}
