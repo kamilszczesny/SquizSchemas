@@ -9,14 +9,7 @@
         "name": "Slider",
         "hidden": false,
         "fields": [{
-                "name": "name",
-                "title": "Name",
-                "default": "",
-                "type": "text",
-                "hidden": false,
-                "validation": {
-                    "required": true
-                }
+                "$ref": "../controls/name-0.0.1.json"
             },
             {
                 "name": "displayDuration",
