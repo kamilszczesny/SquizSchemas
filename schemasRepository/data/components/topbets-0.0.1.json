@@ -53,6 +53,9 @@
         "showMoreText": {
             "type": "string"
         },
+        "noResultText": {
+            "type": "string"
+        },
         "viewAllLink": {
             "$ref": "../atomicDataStructures/link-0.0.1.json"
         },
